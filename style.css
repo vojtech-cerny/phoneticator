@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --base: 223;
+
+  /* Dark mode */
+  --primary: hsl(var(--base), 4%, 95%);
+  --secondary: hsl(var(--base), 4%, 80%);
+  --tertiary: hsl(var(--base), 6%, 60%);
+  --accent: hsl(var(--base), 6%, 40%);
+  --card: hsl(var(--base), 10%, 15%);
+  --background: hsl(var(--base), 12%, 10%);
+  --cta-shadow: hsl(var(--base), 80%, 55%);
+  --cta: hsl(var(--base), 80%, 70%);
+
+  /* Light mode */
+  --primary: hsl(var(--base), 10%, 15%);
+  --secondary: hsl(var(--base), 10%, 30%);
+  --tertiary: hsl(var(--base), 6%, 50%);
+  --accent: hsl(var(--base), 6%, 70%);
+  --card: hsl(var(--base), 4%, 95%);
+  --background: hsl(var(--base), 8%, 90%);
+  --cta: hsl(var(--base), 70%, 40%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--background);
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  width: 100vw;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background-color: var(--card);
+  border-bottom: 2px solid var(--accent);
+  color: var(--cta);
+}
+
+nav a {
+  color: var(--cta);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+footer {
+  width: 100vw;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px 70px;
+  background-color: var(--background);
+  border-top: 2px solid var(--accent);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer > * , footer > * > *{
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.translate-window{
+  margin: auto;
+
+  width: 50%;
+  height: 350px;
+  border-radius: 12px;
+  background-color: var(--card);
+  border: 2px solid var(--accent);
+}
+
+.window-head {
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid var(--accent);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.window-head .flag {
+  width: 30px;
+  height: 20px;
+}
+.window-head .language {
+  margin-left: 10px;
+  color: var(--primary);
+}
+
+.translate-area {
+  resize: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  font-size: 16px;
+  display: block;
+  color: var(--primary)
+}
+
+.copy-icon {
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+  top: -50px;
+  right: 30px;
+  float: right;
+  color: var(--cta);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+}
+
+.copy-icon svg {
+  margin: auto;
+}
+
+.modal__overlay{
+  position: absolute;
+  z-index: 99;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.modal{
+  margin: auto;
+  background-color: var(--card);
+  border: 2px solid var(--accent);
+  padding: 30px;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.modal a {
+  color: var(--cta);
+}
+
+.modal button {
+  background-color: var(--cta);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--primary);
+  border-radius: 7px;
+  padding: 10px 0;
+}
+
+@media only screen and (max-width: 720px) {
+  footer {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    position: static;
+    margin-top: 20px;
+  }
+
+  main {
+    flex-direction: column;
+    margin-top: 65px;
+    gap: 15px;
+  }
+
+  .translate-window{
+    width: 100%;
+    height: 40vh;
+  }
+
+  .copy-icon{
+    display: none;
+  }
+
+  .modal__overlay{
+    padding: 15px;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Phoneticator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="modal__overlay">
+    <div class="modal">
+      <span>Používáním těchto stránek souhlasíte s <a href="">podmínkami</a>.</span>
+      <button id="agreementButton">OK</button>
+    </div>
+  </div>
+  <nav>
+    <a href="/">Phoneticator</a>
+  </nav>
+  <main>
+    <div class="translate-window">
+      <div class="window-head">
+        <img src="./assets/flags/Flag_of_Ukraine.svg" alt="A flag of Ukraine" class="flag">
+        <span class="language">Ukrajinská cyrilice</span>
+      </div>
+      <textarea class="translate-area" id="cyrilic" placeholder="Napiš sem azbukou" lang="uk"></textarea>
+    </div>
+    <div class="translate-window">
+      <div class="window-head">
+        <img src="./assets/flags/Flag_of_the_Czech_Republic.svg" alt="A flag of Ukraine" class="flag">
+        <span class="language">Český přepis (přibližný)</span>
+      </div>
+      <textarea class="translate-area" id="latin" readonly></textarea>
+      <button class="copy-icon" id="copyButton">
+        <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+          <path d="M19.4 20H9.6C9.26863 20 9 19.7314 9 19.4V9.6C9 9.26863 9.26863 9 9.6 9H19.4C19.7314 9 20 9.26863 20 9.6V19.4C20 19.7314 19.7314 20 19.4 20Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M15 9V4.6C15 4.26863 14.7314 4 14.4 4H4.6C4.26863 4 4 4.26863 4 4.6V14.4C4 14.7314 4.26863 15 4.6 15H9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </main>
+  <footer>
+    <a href="./info.html">Zdroje a podmínky</a>
+    <a href="https://github.com/vojtablek/azbuka-do-latinky">Zdrojový kód</a>
+    <span>Vytvořil <a href="https://github.com/vojtablek/">@vojtablek</a></span>
+  </footer>
+  <script src="script.js" charset="utf-8"></script>
+  <script src="/transcription-scripts/ukrainian.js" charset="utf-8"></script>
+</body>
+</html>
