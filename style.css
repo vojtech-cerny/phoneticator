@@ -186,7 +186,7 @@ footer > * , footer > * > *{
   border: none;
   outline: none;
   cursor: pointer;
-  color: var(--primary);
+  color: var(--background);
   border-radius: 7px;
   padding: 10px 0;
 }
