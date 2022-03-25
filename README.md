@@ -16,6 +16,7 @@ Phonetics is amateur project, without a guarantee of accuracy and truthfulness t
 
 ## Future functions
 - [ ] Dark mode
+- [ ] Reverse transcription
 - [ ] Sources and terms styling
 - [ ] Code quality improve
 
