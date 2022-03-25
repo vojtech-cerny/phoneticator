@@ -75,7 +75,7 @@ const toLatin = (str) => {
         if (softened[latin] != undefined || softened[latin] != null) {
           latin = softened[latin];
         } else {
-          latin = "\'";
+          latin += "\'";
         }
       }
       //remember if previous letter is able to soften
