@@ -217,7 +217,7 @@ footer > * , footer > * > *{
   }
 
   .copy-icon{
-    display: none;
+    top: -130px;
   }
 
   .modal__overlay{
