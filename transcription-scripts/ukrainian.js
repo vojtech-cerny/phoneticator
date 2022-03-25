@@ -38,7 +38,8 @@ const key = {
 
 const softened = {
   "D": "Ď",
-  "T": "Ť"
+  "T": "Ť",
+  "N": "Ň"
 }
 
 const ableToSoft = ["D"];
