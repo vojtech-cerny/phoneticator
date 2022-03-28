@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Keyboard</title>
+  <link rel="stylesheet" href="keyboard.css">
+</head>
+<body>
+  <dialog class="keyboard" id="keyboard" data-keyboard-output="txtArea">
+    <div class="keyboard__row">
+      <button>'</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>0</button>
+      <button class="special-button" data-keyboard-role="special" data-keyboard-key="backspace">&LT;=</button>
+    </div>
+    <div class="keyboard__row">
+      <button>й</button>
+      <button>ц</button>
+      <button>у</button>
+      <button>к</button>
+      <button>е</button>
+      <button>н</button>
+      <button>г</button>
+      <button>ш</button>
+      <button>щ</button>
+      <button>х</button>
+      <button>ї</button>
+      <button>ґ</button>
+    </div>
+    <div class="keyboard__row">
+      <button class="special-button" data-keyboard-role="special" data-keyboard-key="capsLock">CapLk</button>
+      <button>ф</button>
+      <button>і</button>
+      <button>в</button>
+      <button>а</button>
+      <button>п</button>
+      <button>р</button>
+      <button>о</button>
+      <button>л</button>
+      <button>д</button>
+      <button>ж</button>
+      <button>є</button>
+    </div>
+    <div class="keyboard__row">
+      <button class="special-button" data-keyboard-key="shift" data-keyboard-role="special">S</button>
+      <button>я</button>
+      <button>ч</button>
+      <button>с</button>
+      <button>м</button>
+      <button>и</button>
+      <button>т</button>
+      <button>ь</button>
+      <button>б</button>
+      <button>ю</button>
+      <button>.</button>
+      <button>0</button>
+    </div>
+    <div class="keyboard__row">
+      <button>,</button>
+      <button>!</button>
+      <button class="special-button" data-keyboard-role="special" data-keyboard-key="space">Space</button>
+      <button>@</button>
+      <button>?</button>
+    </div>
+    </div>
+  </dialog>
+  <button id="btn">Open</button>
+  <script src="keyboard.js" charset="utf-8"></script>
+</body>
+</html>

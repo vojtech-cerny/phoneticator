@@ -1,0 +1,78 @@
+@import url("./assets/palette.css");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.keyboard{
+  width: 500px;
+  aspect-ratio: 2.4 / 1;
+  padding: 10px;
+  border: 0;
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: stretch;
+  justify-content: stretch;
+
+  background-color: var(--card);
+  border-radius: 5px;
+  border: 1px solid var(--accent);
+  cursor: move;
+}
+
+.keyboard__row{
+  width: 100%;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 7px;
+}
+
+.keyboard__row > button {
+  flex-grow: 1;
+  cursor: pointer;
+
+  background-color: var(--card);
+  border-radius: 5px;
+  border: 1px solid var(--accent);
+  color: var(--primary);
+}
+
+.keyboard__row > button:hover {
+  background-color: var(--button);
+}
+
+.keyboard__row > .special-button{
+  flex-grow: 2;
+}
+
+.keyboard__row:nth-of-type(2) {
+  padding-left: 15px;
+}
+
+.keyboard__row:nth-of-type(3) {
+  padding-right: 10px;
+}
+
+.special-button[data-keyboard-key="space"] {
+  flex-grow: 4;
+}
+
+@media only screen and (max-width: 720px) {
+  .keyboard {
+    display: none !important;
+  }
+}

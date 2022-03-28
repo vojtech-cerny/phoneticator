@@ -134,7 +134,7 @@ footer > * , footer > * > *{
   color: var(--primary)
 }
 
-.copy-icon {
+.translate-area-icon {
   cursor: pointer;
   z-index: 10;
   position: relative;
@@ -148,7 +148,11 @@ footer > * , footer > * > *{
   display: flex;
 }
 
-.copy-icon svg {
+.icon-disabled {
+  filter: grayscale(0.9);
+}
+
+.translate-area-icon svg {
   margin: auto;
 }
 
@@ -195,6 +199,10 @@ footer > * , footer > * > *{
   footer {
     padding: 20px;
   }
+
+  #keyboardButton{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -216,7 +224,7 @@ footer > * , footer > * > *{
     height: 40vh;
   }
 
-  .copy-icon{
+  .translate-area-icon{
     top: -130px;
   }
 

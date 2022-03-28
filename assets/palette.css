@@ -1,0 +1,24 @@
+:root {
+  --base: 223;
+
+  /* Dark mode */
+  --primary: hsl(var(--base), 4%, 95%);
+  --secondary: hsl(var(--base), 4%, 80%);
+  --tertiary: hsl(var(--base), 6%, 60%);
+  --accent: hsl(var(--base), 6%, 40%);
+  --button: hsl(var(--base), 9%, 20%);
+  --card: hsl(var(--base), 10%, 15%);
+  --background: hsl(var(--base), 12%, 10%);
+  --cta-shadow: hsl(var(--base), 80%, 55%);
+  --cta: hsl(var(--base), 80%, 70%);
+
+  /* Light mode */
+  --primary: hsl(var(--base), 10%, 15%);
+  --secondary: hsl(var(--base), 10%, 30%);
+  --tertiary: hsl(var(--base), 6%, 50%);
+  --accent: hsl(var(--base), 6%, 70%);
+  --button: hsl(var(--base), 5%, 90%);
+  --card: hsl(var(--base), 4%, 95%);
+  --background: hsl(var(--base), 8%, 90%);
+  --cta: hsl(var(--base), 70%, 40%);
+}

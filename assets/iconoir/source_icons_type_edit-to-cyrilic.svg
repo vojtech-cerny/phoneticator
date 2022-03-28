@@ -1,0 +1,7 @@
+<!-- This is edited version of source_icons_type.svg -->
+<svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 16.2485C7 16.0894 6.93679 15.9368 6.82426 15.8243L3.17574 12.1757C3.06321 12.0632 3 11.9106 3 11.7515V4C3 2.89543 3.89543 2 5 2H12H19C20.1046 2 21 2.89543 21 4V11.7515C21 11.9106 20.9368 12.0632 20.8243 12.1757L17.1757 15.8243C17.0632 15.9368 17 16.0894 17 16.2485V20C17 21.1046 16.1046 22 15 22H9C7.89543 22 7 21.1046 7 20V16.2485Z" stroke="currentColor" stroke-width="1.5"/>
+<!-- <path d="M9.5 11.5L10 10.4M14.5 11.5L14 10.4M14 10.4L12 6L10 10.4M14 10.4H10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> -->
+<path d="M 14.421456,11.500053 V 10.120388 H 9.578544 v 1.379665" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 9.90508,10.028181 C 11.211315,8.962742 10.9553,7.4406834 10.977878,6.000053 h 2.97318 v 3.7940785" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
