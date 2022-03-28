@@ -17,7 +17,7 @@ Phonetics is amateur project, without a guarantee of accuracy and truthfulness t
 ## Future functions
 - [ ] Dark mode
 - [ ] Reverse transcription
-- [ ] Ukrainian keyboard
+- [ ] Ukrainian virtual keyboard (for smartphones)
 - [ ] Sources and terms styling
 - [ ] Code quality improve
 
