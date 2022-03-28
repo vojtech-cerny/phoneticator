@@ -1,4 +1,5 @@
 const buttons = document.querySelectorAll(".keyboard__row > *"),
+      charKeys = document.querySelectorAll(".keyboard__row > *:not([data-keyboard-role='special'])"),
       keyboard = document.getElementById('keyboard'),
       output = document.getElementById(keyboard.getAttribute('data-keyboard-output'));
 
@@ -6,17 +7,18 @@ var isShifted = false,
     isCapsLocked = false;
 
 const deshift = () => {
-  buttons.forEach((button, i) => {
-    button.innerHTML = button.innerHTML.toLowerCase();
-    isShifted = false;
+  charKeys.forEach((key, i) => {
+    key.innerHTML = key.innerHTML.toLowerCase();
   });
+  isShifted = false;
 }
 
 const buttonShift = () => {
-  buttons.forEach((button, i) => {
-    button.innerHTML = button.innerHTML.toUpperCase();
-    isShifted = true;
+  if (isShifted) deshift();
+  charKeys.forEach((key, i) => {
+    key.innerHTML = key.innerHTML.toUpperCase();
   });
+  isShifted = true;
 }
 
 const buttonBackspace = () => {
@@ -26,13 +28,13 @@ const buttonBackspace = () => {
 const buttonCapsLock = () => {
   isShifted = false;
   if (isCapsLocked) {
-    buttons.forEach((button, i) => {
-      button.innerHTML = button.innerHTML.toLowerCase();
+    charKeys.forEach((key, i) => {
+      key.innerHTML = key.innerHTML.toLowerCase();
     });
     isCapsLocked = false;
   } else {
-    buttons.forEach((button, i) => {
-      button.innerHTML = button.innerHTML.toUpperCase();
+    charKeys.forEach((key, i) => {
+      key.innerHTML = key.innerHTML.toUpperCase();
     });
     isCapsLocked = true;
   }
