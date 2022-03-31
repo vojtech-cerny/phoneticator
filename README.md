@@ -35,5 +35,5 @@ Phonetics is amateur project, without a guarantee of accuracy and truthfulness t
 **[vojtablek.github.io/phoneticator/info.html](https://vojtablek.github.io/phoneticator/info.html)**
 
 ## Issues
-1. ~~Failed deploy via Github Pages [\[pages-build-deployment #18]](https://github.com/vojtablek/phoneticator/actions/runs/2053025553)~~
+1. ~~Failed deploy via Github Pages [\[pages-build-deployment #18\]](https://github.com/vojtablek/phoneticator/actions/runs/2053025553)~~
 2. Listening to input from virtual keyboard using [`setInterval()`](https://github.com/vojtablek/phoneticator/blob/cb58fa7099c46673af16214a78a138e013f8ac49/script.js#L44) => causes high memory use
