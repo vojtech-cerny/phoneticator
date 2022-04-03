@@ -1,5 +1,5 @@
-import { uaTranscript } from './transcription-scripts/to-cz/ua.js'
-import { geTranscript } from './transcription-scripts/to-cz/ge.js'
+import { uaTranscript } from './to-cz/ua.js'
+import { geTranscript } from './to-cz/ge.js'
 
 export const langData = {
   ua: {
