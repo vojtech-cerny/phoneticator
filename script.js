@@ -1,4 +1,4 @@
-import { toggleTranscript, langData } from '/transcription-scripts/transcript.js'
+import { toggleTranscript, langData } from './transcription-scripts/transcript.js'
 
 const textareaInput = document.getElementById('input');
 const textareaOutput = document.getElementById('output');
