@@ -44,7 +44,7 @@ const softened = {
 
 const ableToSoft = ["D"];
 
-const toLatin = (str) => {
+export const uaTranscript = (str) => {
   //split to letters
   str = str.split("");
   //analyze every single letter

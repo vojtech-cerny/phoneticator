@@ -98,34 +98,50 @@
       </div>
       </div>
     </dialog>
-    <div class="translate-window">
-      <div class="window-head">
-        <img src="./assets/flags/Flag_of_Ukraine.svg" alt="A flag of Ukraine" class="flag">
-        <span class="language">Ukrajinská cyrilice</span>
+    <div class="transcript-window">
+      <div class="transcript-window-head">
+        <img src="" alt="A flag" style="opacity: 0;" class="flag" id="inputFlag">
+        <select class="dropdown" id="dropdown">
+          <option value="none">Vyber si jazyk</option>
+          <option value="ua">Ukrajinská cyrilice</option>
+          <option value="ge">Gruzínské mchedruli</option>
+        </select>
       </div>
-      <textarea class="translate-area" id="cyrilic" placeholder="Napiš sem azbukou" lang="uk"></textarea>
-      <button class="translate-area-icon icon-disabled tool" id="keyboardButton">
-        <!-- This is edited version of source_icons_type.svg (edited in Inkscape)-->
-        <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7 16.2485C7 16.0894 6.93679 15.9368 6.82426 15.8243L3.17574 12.1757C3.06321 12.0632 3 11.9106 3 11.7515V4C3 2.89543 3.89543 2 5 2H12H19C20.1046 2 21 2.89543 21 4V11.7515C21 11.9106 20.9368 12.0632 20.8243 12.1757L17.1757 15.8243C17.0632 15.9368 17 16.0894 17 16.2485V20C17 21.1046 16.1046 22 15 22H9C7.89543 22 7 21.1046 7 20V16.2485Z" stroke="currentColor" stroke-width="1.5"/>
-        <!-- <path d="M9.5 11.5L10 10.4M14.5 11.5L14 10.4M14 10.4L12 6L10 10.4M14 10.4H10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> -->
-        <path d="M 14.421456,11.500053 V 10.120388 H 9.578544 v 1.379665" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M 9.90508,10.028181 C 11.211315,8.962742 10.9553,7.4406834 10.977878,6.000053 h 2.97318 v 3.7940785" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
+      <textarea class="transcript-area reject" id="input"></textarea>
+      <div class="transcript-window-bottom">
+          <div class="notification reject" id="languageErrorNotification">
+            <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.0429 21H3.95705C2.41902 21 1.45658 19.3364 2.22324 18.0031L10.2662 4.01533C11.0352 2.67792 12.9648 2.67791 13.7338 4.01532L21.7768 18.0031C22.5434 19.3364 21.581 21 20.0429 21Z" stroke="currentColor" stroke-linecap="round"/>
+            <path d="M12 9V13" stroke="currentColor" stroke-linecap="round"/>
+            <path d="M12 17.01L12.01 16.9989" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Vyber jazyk, prosím!</span>
+          </div>
+        <button class="transcript-area-icon icon-disabled tool" id="keyboardButton" style="display: none;">
+          <!-- This is edited version of source_icons_type.svg -->
+          <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 16.2485C7 16.0894 6.93679 15.9368 6.82426 15.8243L3.17574 12.1757C3.06321 12.0632 3 11.9106 3 11.7515V4C3 2.89543 3.89543 2 5 2H12H19C20.1046 2 21 2.89543 21 4V11.7515C21 11.9106 20.9368 12.0632 20.8243 12.1757L17.1757 15.8243C17.0632 15.9368 17 16.0894 17 16.2485V20C17 21.1046 16.1046 22 15 22H9C7.89543 22 7 21.1046 7 20V16.2485Z" stroke="currentColor" stroke-width="1.5"/>
+            <!-- <path d="M9.5 11.5L10 10.4M14.5 11.5L14 10.4M14 10.4L12 6L10 10.4M14 10.4H10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> -->
+            <path d="M 14.421456,11.500053 V 10.120388 H 9.578544 v 1.379665" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M 9.90508,10.028181 C 11.211315,8.962742 10.9553,7.4406834 10.977878,6.000053 h 2.97318 v 3.7940785" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+      </div>
     </div>
-    <div class="translate-window">
-      <div class="window-head">
-        <img src="./assets/flags/Flag_of_the_Czech_Republic.svg" alt="A flag of Ukraine" class="flag">
+    <div class="transcript-window">
+      <div class="transcript-window-head">
+        <img src="./assets/flags/cz.svg" alt="A flag of the Czech republic" class="flag">
         <span class="language">Český přepis (přibližný)</span>
       </div>
-      <textarea class="translate-area" id="latin" readonly></textarea>
-      <button class="translate-area-icon" id="copyButton">
-        <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
-          <path d="M19.4 20H9.6C9.26863 20 9 19.7314 9 19.4V9.6C9 9.26863 9.26863 9 9.6 9H19.4C19.7314 9 20 9.26863 20 9.6V19.4C20 19.7314 19.7314 20 19.4 20Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M15 9V4.6C15 4.26863 14.7314 4 14.4 4H4.6C4.26863 4 4 4.26863 4 4.6V14.4C4 14.7314 4.26863 15 4.6 15H9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
+      <textarea class="transcript-area" id="output" readonly></textarea>
+      <div class="transcript-window-bottom">
+        <button class="transcript-area-icon" id="copyButton">
+          <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <path d="M19.4 20H9.6C9.26863 20 9 19.7314 9 19.4V9.6C9 9.26863 9.26863 9 9.6 9H19.4C19.7314 9 20 9.26863 20 9.6V19.4C20 19.7314 19.7314 20 19.4 20Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 9V4.6C15 4.26863 14.7314 4 14.4 4H4.6C4.26863 4 4 4.26863 4 4.6V14.4C4 14.7314 4.26863 15 4.6 15H9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </main>
   <footer>
@@ -133,8 +149,8 @@
     <a href="https://github.com/vojtablek/phoneticator">Zdrojový kód</a>
     <span>Vytvořil <a href="https://github.com/vojtablek/">@vojtablek</a></span>
   </footer>
-  <script src="script.js" charset="utf-8"></script>
-  <script src="./transcription-scripts/from-cz/ua.js" charset="utf-8"></script>
+  <script src="./transcription-scripts/transcript.js" charset="utf-8" type="module"></script>
   <script src="./keyboards/ua/keyboard.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8" type="module"></script>
 </body>
 </html>
