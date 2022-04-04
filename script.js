@@ -27,6 +27,9 @@ const transcript = () => {
 }
 
 const toggleLanguage = (e) => {
+  if (isKeyboardVisible) {
+    toggleKeyboard();
+  }
   if (e.target.value == 'none') {
     lang = null;
     inputFlag.style.opacity = "0";
@@ -74,7 +77,7 @@ const toggleKeyboard = () => {
 
 setInterval(() => {
   if (isKeyboardVisible) {
-    setInterval(transcript, 100);
+    setInterval(transcript, 200);
   }
 }, 2000);
 
