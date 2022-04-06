@@ -7,6 +7,7 @@ Phonetics is amateur project, without a guarantee of accuracy and truthfulness t
 
 ## Supported languages:
 - [x] Ukrainian
+- [x] Georgian
 
 ## Future supported languages
 *We are working hard to make transcriptions for more languages*
