@@ -1,4 +1,5 @@
 import { toggleTranscript, langData } from './transcription-scripts/transcript.js'
+import { setupKeyboard } from './keyboards/keyboard.js'
 
 const textareaInput = document.getElementById('input');
 const textareaOutput = document.getElementById('output');
@@ -46,6 +47,8 @@ const toggleLanguage = (e) => {
   textareaInput.classList.remove("reject");
   languageErrorNotification.style.display = "none";
   if (langData[lang].hasKeyboard) {
+    keyboard.dataset.keyboardLanguage = lang;
+    setupKeyboard(lang);
     keyboardButton.style.display = "flex";
   } else {
     keyboardButton.style.display = "none";

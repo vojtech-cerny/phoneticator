@@ -7,7 +7,7 @@ export const langData = {
     placeholderText: 'cyrilicí'
   },
   ge: {
-    hasKeyboard: false,
+    hasKeyboard: true,
     placeholderText: 'mchedrulí'
   }
 }
