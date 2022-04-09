@@ -42,6 +42,7 @@
         </select>
       </div>
       <textarea class="transcript-area reject" id="input"></textarea>
+      <label for="input">Text pro transkripci</label>
       <div class="transcript-window-bottom">
           <div class="notification reject" id="languageErrorNotification">
             <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +52,7 @@
             </svg>
             <span>Vyber jazyk, prosím!</span>
           </div>
-        <button class="transcript-area-icon icon-disabled tool" id="keyboardButton" style="display: none;" aria-label="Toggle virtual keyboard">
+        <button class="transcript-area-icon icon-disabled tool" id="keyboardButton" style="display: none;" aria-label="Přepnout virtuální klávesnici">
           <!-- This is edited version of source_icons_type.svg -->
           <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7 16.2485C7 16.0894 6.93679 15.9368 6.82426 15.8243L3.17574 12.1757C3.06321 12.0632 3 11.9106 3 11.7515V4C3 2.89543 3.89543 2 5 2H12H19C20.1046 2 21 2.89543 21 4V11.7515C21 11.9106 20.9368 12.0632 20.8243 12.1757L17.1757 15.8243C17.0632 15.9368 17 16.0894 17 16.2485V20C17 21.1046 16.1046 22 15 22H9C7.89543 22 7 21.1046 7 20V16.2485Z" stroke="currentColor" stroke-width="1.5"/>
@@ -69,7 +70,7 @@
       </div>
       <textarea class="transcript-area" id="output" readonly></textarea>
       <div class="transcript-window-bottom">
-        <button class="transcript-area-icon" id="copyButton" aria-label="Copy transcription">
+        <button class="transcript-area-icon" id="copyButton" aria-label="Kopírovat transkripci">
           <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
             <path d="M19.4 20H9.6C9.26863 20 9 19.7314 9 19.4V9.6C9 9.26863 9.26863 9 9.6 9H19.4C19.7314 9 20 9.26863 20 9.6V19.4C20 19.7314 19.7314 20 19.4 20Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M15 9V4.6C15 4.26863 14.7314 4 14.4 4H4.6C4.26863 4 4 4.26863 4 4.6V14.4C4 14.7314 4.26863 15 4.6 15H9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
