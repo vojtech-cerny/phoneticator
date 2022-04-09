@@ -7,7 +7,7 @@
   <title>Phoneticator</title>
   <link rel="stylesheet" href="style.css">
   <!-- Styling of keyboard -->
-  <link rel="stylesheet" href="./keyboards/ua/keyboard.css">
+  <link rel="stylesheet" href="./keyboards/keyboard.css">
   <!-- Meta tags -->
   <!-- Thanks to https://metatags.io/ -->
   <meta name="title" content="Phoneticator">
@@ -31,73 +31,7 @@
     <a href="./">Phoneticator</a>
   </nav>
   <main>
-    <dialog class="keyboard" style="display: none; top: 35%; left: 30%;" id="keyboard" data-keyboard-output="input">
-      <div class="keyboard__row">
-        <button>'</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>0</button>
-        <button class="special-button" data-keyboard-role="special" data-keyboard-key="backspace">&LT;=</button>
-      </div>
-      <div class="keyboard__row">
-        <button>й</button>
-        <button>ц</button>
-        <button>у</button>
-        <button>к</button>
-        <button>е</button>
-        <button>н</button>
-        <button>г</button>
-        <button>ш</button>
-        <button>щ</button>
-        <button>з</button>
-        <button>х</button>
-        <button>ї</button>
-        <button>ґ</button>
-      </div>
-      <div class="keyboard__row">
-        <button class="special-button" data-keyboard-role="special" data-keyboard-key="capsLock">CapsLk</button>
-        <button>ф</button>
-        <button>і</button>
-        <button>в</button>
-        <button>а</button>
-        <button>п</button>
-        <button>р</button>
-        <button>о</button>
-        <button>л</button>
-        <button>д</button>
-        <button>ж</button>
-        <button>є</button>
-      </div>
-      <div class="keyboard__row">
-        <button class="special-button" data-keyboard-key="shift" data-keyboard-role="special">S</button>
-        <button>я</button>
-        <button>ч</button>
-        <button>с</button>
-        <button>м</button>
-        <button>и</button>
-        <button>т</button>
-        <button>ь</button>
-        <button>б</button>
-        <button>ю</button>
-        <button>.</button>
-        <button>:</button>
-      </div>
-      <div class="keyboard__row">
-        <button>,</button>
-        <button>!</button>
-        <button class="special-button" data-keyboard-role="special" data-keyboard-key="space">Space</button>
-        <button>@</button>
-        <button>?</button>
-      </div>
-      </div>
-    </dialog>
+    <dialog class="keyboard" style="display: none; top: 35%; left: 30%;" id="keyboard" data-keyboard-output="input" data-keyboard-language="ua"></dialog>
     <div class="transcript-window">
       <div class="transcript-window-head">
         <img src="" alt="A flag" style="opacity: 0;" class="flag" id="inputFlag">
@@ -150,7 +84,7 @@
     <span>Vytvořil <a href="https://github.com/vojtablek/">@vojtablek</a></span>
   </footer>
   <script src="./transcription-scripts/transcript.js" charset="utf-8" type="module"></script>
-  <script src="./keyboards/ua/keyboard.js" charset="utf-8"></script>
+  <script src="./keyboards/keyboard.js" charset="utf-8" type="module"></script>
   <script src="script.js" charset="utf-8" type="module"></script>
 </body>
 </html>
