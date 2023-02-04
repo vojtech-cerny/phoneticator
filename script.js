@@ -31,6 +31,9 @@ const toggleLanguage = (e) => {
   if (isKeyboardVisible) {
     toggleKeyboard();
   }
+  if (e.target.value == "es") {
+    alert("θ = něco jako anglické th")
+  }
   if (e.target.value == 'none') {
     lang = null;
     inputFlag.style.opacity = "0";
