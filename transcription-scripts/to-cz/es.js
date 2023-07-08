@@ -85,8 +85,8 @@ const translateKey = {
     q: "k",
     ü: "u",
     ñ: "ň",
-    j: "ch",
-    h: ""
+    h: "",
+    j: "ch"
 }
 
 export const esTranscript = (str) => {
