@@ -81,6 +81,10 @@ const translateKey = {
         c: /z(?=[ie])/gi,
         z: /z(?![ie])/gi
     },
+    p: {
+        mezera: /p(?=s)/gi,
+        p: /p(?!s)/gi
+    },
     ch: "č",
     q: "k",
     ü: "u",
